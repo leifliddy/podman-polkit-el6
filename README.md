@@ -2,7 +2,7 @@
 
 Builds the **polkit-0.96-11.el6_10.2** rpms for Centos 6.
 
-The SRPM includes the patch the resolves **RHSA-2022:0269**
+The SRPM includes the patch that resolves **RHSA-2022:0269**
 
 **Fedora package install**
 ```
