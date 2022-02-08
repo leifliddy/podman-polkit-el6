@@ -1,0 +1,6 @@
+[centos-base]
+name=centos-base
+baseurl=https://vault.centos.org/6.10/os/x86_64/
+enabled=1
+gpgcheck=1
+gpgkey=https://vault.centos.org/RPM-GPG-KEY-CentOS-6

@@ -1,0 +1,6 @@
+[centos-updates]
+name=centos-updates
+baseurl=http://vault.centos.org/6.10/updates/x86_64/
+enabled=1
+gpgcheck=1
+gpgkey=https://vault.centos.org/RPM-GPG-KEY-CentOS-6
