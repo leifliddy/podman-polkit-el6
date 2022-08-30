@@ -1,6 +1,10 @@
 #!/bin/bash
 
-find /output_rpm/ -type f | grep '\.rpm$' | xargs rm -f
+find /output_rpm/ | egrep -v '^/output_rpm/$|\.gitignore' | xargs rm -rf
+rpm -ivh /root/polkit-0.96-11.el6_10.2.src.rpm
+rpmbuild -ba /root/rpmbuild/SPECS/polkit.spec
+
+# copy RPMs
 find /root/rpmbuild/RPMS/ -type f | grep '\.rpm$' | xargs cp -t /output_rpm/
 
 # copy SRPM
